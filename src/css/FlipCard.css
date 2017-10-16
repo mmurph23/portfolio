@@ -1,0 +1,13 @@
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body { font-family: 'Lily Script One'; }
+.card { position: relative; top: 50%; left: 50%; width: 350px; height: 425px; margin: -150px; float: left; perspective: 500px; }
+h3 { font-size: 48px; padding-top: 20px; }
+.front img {width:350px;height:auto;border-bottom:2px solid #5cb4ff;}
+.content { position: relative; width: 350px; height: 425px; box-shadow: 0 0 15px rgba(0,0,0,0.1); transition: transform 1s; transform-style: preserve-3d; border-radius:5px; }
+.content:hover {box-shadow: 0 0 15px rgba(90,180,255,0.45);}
+.content.front-flip { transform: rotateY( 180deg ) ; transition: transform 0.5s; position: relative; width: 350px; height: 425px;}
+.front, .back { cursor: alias;position: absolute; width:inherit; height:inherit;  background: white; color: #5cb4ff; text-align: center; font-size: 60px; border-radius: 5px; backface-visibility: hidden;  }
+.back { background: #fff; color: white; transform: rotateY( 180deg ); }
+.back a {font-size:22px;width:100%;display:block;padding-top: 20px;}
+.back p { max-width: 100%; padding-left: 20px; padding-right: 20px; padding-top: 15%; color:#5cb4ff; }
+.front h3 { padding-left: 30px; padding-right: 30px;}
